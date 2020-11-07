@@ -1,4 +1,4 @@
-# random-javascript
+# random
 
 Hello world!
 
