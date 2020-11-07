@@ -1,5 +1,5 @@
 <script>
-// Conditional Statement IF
+// Conditional Statement IF example
 
 a=10;
 b=10;
