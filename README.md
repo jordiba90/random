@@ -14,3 +14,5 @@ Keep in touch!
 
 REFERENCES:
 https://www.linkedin.com/learning/fundamentos-esenciales-de-la-programacion/trabajando-con-condiciones-complejas
+https://www.tiobe.com/tiobe-index/
+https://learn.datacamp.com/
