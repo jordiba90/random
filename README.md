@@ -2,7 +2,6 @@
 
 Hello world!
 
-
 This is the first time that I use Github, even though I registered back on the 25th of February 2018.
 
 Afterwards having graduated on Economics and Business Administration in 2018 and 2019, nowadays I am studying a Master in Data Science in the same university: UOC (https://studies.uoc.edu/en/study-at-the-uoc)
