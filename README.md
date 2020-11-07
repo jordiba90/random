@@ -16,4 +16,4 @@ Keep on touch!
 
 PS: REFERENCES ON MY WIKI
 
-![Logo](/profile.png)
+[Logo](/profile.png)
