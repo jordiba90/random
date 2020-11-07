@@ -13,3 +13,5 @@ My idea about this repo is having a "tailor's drawer" where I will collect piece
 Keep on touch!
 
 PS: REFERENCES ON MY WIKI
+
+[![Logo](/profile.png)]
