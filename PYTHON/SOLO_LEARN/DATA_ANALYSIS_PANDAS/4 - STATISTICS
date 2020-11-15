@@ -1,0 +1,75 @@
+#DATA_ANALYSIS_PANDAS_STATISTICS
+
+####################################################################################################################
+#Min / Max / Mean
+####################################################################################################################
+
+import pandas as pd
+
+presidents_df = pd.read_csv('https://sololearn.com/uploads/files/president_heights_party.csv', index_col='name')
+                                  
+print("PRESIDENTS_MINIMUM :\n")
+print(presidents_df.min())
+
+print("\nPRESIDENTS_MAXIMUM :\n")
+print(presidents_df.max())
+
+print("\nPRESIDENTS_MEAN :\n")
+print(presidents_df.mean())
+
+####################################################################################################################
+#Quantiles
+####################################################################################################################
+
+print("\nPRESIDENTS_QUANTILES :\n")
+print(presidents_df['age'].quantile([0.25, 0.5, 0.75, 1]))
+
+print("\nPRESIDENTS__AGE_MEAN :",presidents_df['age'].mean())
+print("PRESIDENTS__AGE_MEDIAN :",presidents_df['age'].median())
+
+####################################################################################################################
+#Variance and Standard Deviation
+####################################################################################################################
+
+example_const = pd.Series([2, 2, 2])
+print("\nEXAMPLE_CONST :\n")
+print(example_const)
+print("\nEXAMPLE_CONST_MEAN :",example_const.mean())
+print("EXAMPLE_CONST_VARIANCE :",example_const.var())
+print("EXAMPLE_CONST_DEVIATION :",example_const.std())
+
+example_dat = pd.Series([2, 3, 4])
+print("\nEXAMPLE_DAT :\n")
+print(example_dat)
+print("\nEXAMPLE_DAT_MEAN :",example_dat.mean())
+print("EXAMPLE_DAT_VARIANCE :",example_dat.var())
+print("EXAMPLE_DAT_DEVIATION :",example_dat.std())
+
+print("\nPRESIDENTS_VARIANCE :",presidents_df['age'].var())
+print("PRESIDENTS_DEVIATION :",presidents_df['age'].std())
+
+print("\nPRESIDENTS_VARIANCE :\n")
+print(presidents_df.var())
+
+print("\nPRESIDENTS_DEVIATION :\n")
+print(presidents_df.std())
+
+####################################################################################################################
+#describe()
+####################################################################################################################
+
+print("\nPRESIDENTS_DESCRIPTION_AGE :\n")
+print(presidents_df['age'].describe())
+
+print("\nPRESIDENTS_DESCRIPTION :\n")
+print(presidents_df.describe())
+
+####################################################################################################################
+#Categorical Variable
+####################################################################################################################
+
+print("\nPRESIDENTS_PARTY :\n")
+print(presidents_df['party'].value_counts())
+
+print("\nPRESIDENTS_DESCRIPTION_PARTY :\n")
+print(presidents_df['party'].describe())
