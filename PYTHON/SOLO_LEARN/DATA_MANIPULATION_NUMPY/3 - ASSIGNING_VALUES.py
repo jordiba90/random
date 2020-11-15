@@ -12,50 +12,80 @@ ages_arr = np.array(ages)
 print("\nAGES :\n",ages_arr)
 print("\nSHAPE_AGES :\n",ages_arr.shape)
 
-#Assigning Single Values 1.1
+#######################################################################################################################
+#Assigning Single Values
+#######################################################################################################################
+
 heights_arr[3] = 165
 print("\nOPTION_1_HEIGHTS_ARRAY :\n\n",heights_arr)
 
-#Assigning Single Values 1.2
+#######################################################################################################################
+#Assigning Single Values
+#######################################################################################################################
+
 heights_and_ages = heights + ages 
 heights_and_ages_arr = np.array(heights_and_ages)
 heights_and_ages_arr = heights_and_ages_arr.reshape((2,45))
 heights_and_ages_arr[0, 3] = 165
 print("\nOPTION_2_HEIGHTS_AGES_ARRAY :\n\n",heights_and_ages_arr)
 
-#Assigning Single Values 1.3
+#######################################################################################################################
+#Assigning Single Values
+#######################################################################################################################
+
 heights_and_ages_arr[0,:] = 180
 print("\nOPTION_3_HEIGHTS_AGES_ARRAY_180_TO_HEIGHTS :\n\n",heights_and_ages_arr)
 
-#Assigning Single Values 1.4
+#######################################################################################################################
+#Assigning Single Values
+#######################################################################################################################
+
 heights_and_ages_arr[:2, :2] = 0
 print("\nOPTION_4_HEIGHTS_AGES_ARRAY_0_TO_FIRST_2_HEIGHTS_AGES :\n\n",heights_and_ages_arr)
 
-#Assigning an Array to an Array 2.1
+#######################################################################################################################
+#Assigning an Array to an Array
+#######################################################################################################################
+
 heights_and_ages_arr[:, 0] = [190, 58]
 print("\nOPTION_5 :\n\n",heights_and_ages_arr)
 
-#Assigning an Array to an Array 2.2
+#######################################################################################################################
+#Assigning an Array to an Array
+#######################################################################################################################
+
 new_record = np.array([[180, 183, 190], [54, 50, 69]])
 heights_and_ages_arr[:, 42:] = new_record
 print("\nOPTION_6 :\n\n",heights_and_ages_arr)
 
-#Combining Two Arrays 3.1
+#######################################################################################################################
+#Combining Two Arrays
+#######################################################################################################################
+
 print("\nOPTION_7_AGES_ARRAY_FIRST_3_AGES :\n\n",ages_arr[:3,])
 
-#Combining Two Arrays 3.2
+#######################################################################################################################
+#Combining Two Arrays
+#######################################################################################################################
+
 heights_arr = heights_arr.reshape((45,1))
 ages_arr = ages_arr.reshape((45,1))
 height_age_arr = np.hstack((heights_arr, ages_arr))
 print("\nOPTION_8 :\n\n",height_age_arr.shape,"\n",height_age_arr[:3,])
 
-#Combining Two Arrays 3.3
+#######################################################################################################################
+#Combining Two Arrays
+#######################################################################################################################
+
 heights_arr = heights_arr.reshape((1,45))
 ages_arr = ages_arr.reshape((1,45))
 height_age_arr = np.vstack((heights_arr, ages_arr))
 print("\nOPTION_9 :\n\n",height_age_arr.shape,"\n",height_age_arr[:,:3])
 
-#Concatenate 4.1
+#######################################################################################################################
+#Concatenate
+#######################################################################################################################
+
 heights_arr = heights_arr.reshape((45,1))
 ages_arr = ages_arr.reshape((45,1))
 height_age_arr = np.hstack((heights_arr, ages_arr))
@@ -64,7 +94,10 @@ height_age_arr = np.concatenate((heights_arr, ages_arr), axis=1)
 print("\nRESULT_1_SAME :\n\n",height_age_arr.shape)
 print("\nRESULT_1_SLICED :\n\n",height_age_arr[:3,:])
 
-#Concatenate 4.2
+#######################################################################################################################
+#Concatenate
+#######################################################################################################################
+
 heights_arr = heights_arr.reshape((1,45))
 ages_arr = ages_arr.reshape((1,45))
 height_age_arr = np.vstack((heights_arr, ages_arr))
