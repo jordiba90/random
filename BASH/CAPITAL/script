@@ -21,6 +21,10 @@ jordiba90@lts:~$ crontab -e
   GNU nano 4.8  
   
   @reboot /home/jordiba90/myxkbmap
+  
+  
+RESOURCE:
+https://ubuntuforums.org/archive/index.php/t-1462333.html
 
 
 
