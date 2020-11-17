@@ -14,7 +14,13 @@ jordiba90@lts:~$ nano myxkbmap.sh
 
   xkbcomp /home/jordiba90/myxkbmap $DISPLAY
 
+THEN
 
+jordiba90@lts:~$ crontab -e
+
+  GNU nano 4.8  
+  
+  @reboot /home/jordiba90/myxkbmap
 
 
 
