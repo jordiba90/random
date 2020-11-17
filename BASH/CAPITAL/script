@@ -23,7 +23,7 @@ jordiba90@lts:~$ crontab -e
   @reboot /home/jordiba90/myxkbmap
   
   
-RESOURCE:
+SOURCE:
 https://ubuntuforums.org/archive/index.php/t-1462333.html
 
 
